@@ -25,7 +25,7 @@ class MapofplaySpider(scrapy.Spider):
         generate the initial requests to get the list cities pages
         :yield: request to the list page
         """
-        for i in range(100000):
+        for i in range(26000):
             yield scrapy.Request(
                 url=self.base_url % i,
                 callback=self.parse_list_page
